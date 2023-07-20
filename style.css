@@ -1,0 +1,110 @@
+:root{
+    --color-text:rgb(43, 37, 117);
+    
+}
+body{
+    margin: 0%;
+    background-color:rgba(136, 136, 156, 0.87) ;
+}
+h2{
+    margin:0%;
+}
+#my_todo_list{
+    color: var(--color-text);
+    margin:1% 2% 0%;
+    font-family: 'Montserrat';
+    font-size: 2.5vw;
+}
+.area{
+    display: flex;
+    width: 50vw;
+    height: 42vw;
+    background-color: rgb(192, 192, 212);
+    margin:auto;
+    margin-top: 3%;
+    padding: 1.5%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 2%;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+
+}
+#input_text{
+    width: 40vw;
+    height: 4vw;
+    border-radius: 1vw;
+    border: none;
+    padding: 1.5%;
+    outline: none;
+    font-family: 'Montserrat';
+    font-size: 1.5vw;
+    color: rgb(115, 112, 112);
+}
+#input_submit{
+    width: 12vw;
+    height: 3vw;
+    border-radius: 1vw;
+    border: none;
+    cursor: pointer;
+    margin-top: 2%;
+    font-family: 'Montserrat';
+    font-size: 1.2vw;
+    color: white;
+    background-color: rgba(56, 51, 114, 0.801);
+}
+#input_submit:hover{
+    background-color: rgba(56, 51, 114, 0.648);
+}
+#input_submit:focus{
+    background-color: rgba(56, 51, 114, 0.451);
+}
+
+#span_area_list{
+    width: 45vw;
+    height: 35vw;
+    background-color: rgba(53, 53, 53, 0.526);
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 1200px){
+    .area{
+        width: 60vw;
+        height: 55vw;
+    }
+}
+@media screen and (max-width:930px){
+    .area{
+        width: 70vw;
+        height: 65vw;
+    }
+}
+@media screen and (max-width:700px){
+    .area{
+        width: 85vw;
+        height: 77vw;
+    }
+    #span_area_list {
+        width: 73vw;
+        height: 46vw;
+    }
+    #input_text{
+        width: 70vw;
+        height: 5vw;
+    }
+    #input_submit {
+        width: 15vw;
+        height: 4vw;
+        font-size: 1.7vw;
+    }
+
+}
+@media screen and (max-width:400px){
+    body{
+        margin-top: 7%;
+    }
+}
