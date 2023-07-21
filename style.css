@@ -98,13 +98,14 @@ h2{
         height: 63vw;
     }
     #input_text{
-        width: 70vw;
-        height: 5vw;
+        width: 75vw;
+        height: 6.3vw;
+        font-size: 3vw;
     }
     #input_submit {
         width: 15vw;
-        height: 4vw;
-        font-size: 1.7vw;
+        height: 6vw;
+        font-size: 2.4vw;
     }
     #my_todo_list {
         font-size: 4vw;
