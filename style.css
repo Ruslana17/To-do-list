@@ -77,6 +77,18 @@ h2{
     width: 40vw;
     height: 30vw;
 }
+#list>li{
+    font-size: 2vw;
+    color: white;
+    text-decoration: none;
+}
+
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
 
 @media screen and (max-width: 1200px){
     .area{
