@@ -73,6 +73,10 @@ h2{
     flex-direction: column;
     padding: 1.5%;
 }
+#list{
+    width: 40vw;
+    height: 30vw;
+}
 
 @media screen and (max-width: 1200px){
     .area{

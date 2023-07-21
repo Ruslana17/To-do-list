@@ -31,7 +31,7 @@ function newElement(){
 
 }
 
-
+button.addEventListener('click', newElement)
 
 
 
