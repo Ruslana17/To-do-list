@@ -11,9 +11,11 @@ const button= document.querySelector('#input_submit');/*button submit */
 const areaForText = document.querySelector('#input_text');/* text area */
 
 
+
+
 function newElement(){
 	let li= document.createElement("li");
-	let inputValue= areaForText.value;
+	let inputValue= document.getElementById("input_text").value;
 	let t = document.createTextNode(inputValue);
 	li.appendChild(t);
 	if(inputValue === ""){
@@ -24,14 +26,22 @@ function newElement(){
 	}
 	areaForText.value="";
 
+	let span =document.createElement('span');
+	let txt =document.createTextNode("\u00D7");
+	span.className="close";
+	span.appendChild(txt);
+	li.appendChild(span);
 
-	/*let span =document.createElement("SPAN");
-	let txt =document.createTextNode("/uooD7");*/
+	for(i=0; i<close.length; i++){
+		close[i].onclick= function(){
+			var div=this.parentElement;
+			div.style.display='none';
+		}
+	}
 
 
 }
 
-button.addEventListener('click', newElement)
 
 
 
