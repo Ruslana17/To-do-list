@@ -18,7 +18,7 @@ h2{
 .area{
     display: flex;
     width: 50vw;
-    height: 42vw;
+    height: 49vw;
     background-color: rgb(192, 192, 212);
     margin:auto;
     margin-top: 3%;
@@ -45,7 +45,7 @@ h2{
     font-size: 1.5vw;
     color: rgb(115, 112, 112);
 }
-#input_submit{
+#submit{
     width: 12vw;
     height: 3vw;
     border-radius: 1vw;
@@ -53,20 +53,25 @@ h2{
     cursor: pointer;
     margin-top: 2%;
     font-family: 'Montserrat';
-    font-size: 1.2vw;
+
     color: white;
+    font-size: 1.5vw;
+    
+    padding: 1.1vw 0vw 0vw;
+    text-align: center;
+    
     background-color: rgba(56, 51, 114, 0.801);
 }
-#input_submit:hover{
+#submit:hover{
     background-color: rgba(56, 51, 114, 0.648);
 }
-#input_submit:focus{
+#submit:focus{
     background-color: rgba(56, 51, 114, 0.451);
 }
 
 #span_area_list{
     width: 45vw;
-    height: 35vw;
+    height: 27vw;
     background-color: rgba(53, 53, 53, 0.526);
     margin-top: 5%;
     display: flex;
@@ -76,11 +81,16 @@ h2{
 #list{
     width: 40vw;
     height: 30vw;
+    padding: 1vw;
+    margin: 1vw 0vw;
 }
 #list>li{
     font-size: 2vw;
     color: white;
-    text-decoration: none;
+    list-style-type: none;
+    margin: 1.5vw;
+    font-family: 'Montserrat';
+    font-size: 1.5vw;
 }
 
 .close{
@@ -93,30 +103,44 @@ h2{
 @media screen and (max-width: 1200px){
     .area{
         width: 60vw;
-        height: 55vw;
+        height: 60vw;
+    }
+    #span_area_list{
+        height: 35vw;
     }
 }
 @media screen and (max-width:930px){
     .area{
-        width: 80vw;
+        width: 75vw;
         height: 65vw;
+    }
+    #input_text{
+        width: 51vw;
+    }
+    #span_area_list{
+        width: 51vw;
+        
+    }
+    #list>li{
+        font-size: 2.5vw;
     }
 }
 @media screen and (max-width:700px){
     .area{
         width: 97vw;
-        height: 119vw;
-        padding-left: 4%;
-        margin-top: 9vw;
+        height: 98vw;
+        padding-left: 3%;
+        margin-top: 5vw;
     }
     #span_area_list {
-        width: 73vw;
+        width: 76vw;
         height: 63vw;
     }
     #input_text{
         width: 75vw;
-        height: 6.3vw;
-        font-size: 3vw;
+        height: 8vw;
+
+        font-size: 3.5vw;
     }
     #input_submit {
         width: 15vw;
@@ -124,12 +148,18 @@ h2{
         font-size: 2.4vw;
     }
     #my_todo_list {
-        font-size: 4vw;
+        font-size: 5vw;
+    }
+    #submit{
+        font-size: 2.5vw;
+        width: 18vw;
+        height: 5vw;
     }
 
 }
 @media screen and (max-width:400px){
     body{
-        margin-top: 7%;
+        margin-top: 2%;
+        padding: 1.2vw 0vw 0vw;
     }
 }
