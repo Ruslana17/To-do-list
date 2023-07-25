@@ -78,8 +78,8 @@ h2{
     padding: 1.5%;
 }
 #list{
-    width: 84vw;
-    height: 61vw;
+    width: 46vw;
+    height: 52vw;
     padding: 0vw;
     margin: 1vw 0vw;
 }
@@ -87,16 +87,21 @@ h2{
     font-size: 2vw;
     color: rgb(79, 78, 78);
     list-style-type: none;
-    margin: 1.5vw;
+    margin: 1vw;
     font-family: 'Montserrat';
     font-size: 1.5vw;
 }
 
 .close{
     /*padding: 12px 16px 12px 16px;*/
-    margin-left: 45vw;
-    font-size: 4vw;
-
+    padding: 2px;
+    margin-left: 12vw;
+    font-size: 3vw;
+   
+  }
+  .close:hover{
+    background-color: rgba(79, 78, 78, 0.288); 
+    cursor: pointer;
   }
 
 @media screen and (max-width: 1200px){
