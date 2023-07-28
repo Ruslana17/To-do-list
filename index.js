@@ -9,6 +9,7 @@ const areaList = document.querySelector('#span_area_list');
 const list = document.querySelector('#list'); /*ul */
 const button= document.querySelector('#input_submit');/*button submit */
 const areaForText = document.querySelector('#input_text');/* text area */
+const closeList = document.getElementsByClassName("close");
 
 
 function newElement(){
@@ -32,12 +33,21 @@ function newElement(){
 
 	for(i=0; i<close.length; i++){
 		close[i].onclick= function(){
-			var div=this.parentElement;
+			let div=this.parentElement;
 			div.style.display='none';
 		}
 	}
 
 
+}
+/* close list */
+let close = closeList;
+let i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
 }
 
 
