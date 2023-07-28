@@ -11,8 +11,6 @@ const button= document.querySelector('#input_submit');/*button submit */
 const areaForText = document.querySelector('#input_text');/* text area */
 
 
-
-
 function newElement(){
 	let li= document.createElement("li");
 	let inputValue= document.getElementById("input_text").value;
